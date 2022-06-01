@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EmployeeController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="matricule" disable="true" layoutX="363.0" layoutY="14.0" prefHeight="25.0" prefWidth="260.0" />
+            <TextField fx:id="nom" disable="true" layoutX="363.0" layoutY="47.0" prefHeight="25.0" prefWidth="260.0" />
+            <TextField fx:id="email" disable="true" layoutX="363.0" layoutY="84.0" prefHeight="25.0" prefWidth="254.0" />
+            <TextField fx:id="recrt" disable="true" layoutX="363.0" layoutY="118.0" prefHeight="25.0" prefWidth="254.0" />
+            <TextField fx:id="salaire" disable="true" layoutX="363.0" layoutY="155.0" prefHeight="25.0" prefWidth="254.0" />
+            <TextField fx:id="categorie" disable="true" layoutX="363.0" layoutY="195.0" prefHeight="25.0" prefWidth="254.0" />
+            <TextField fx:id="hsupp" disable="true" layoutX="363.0" layoutY="240.0" prefHeight="25.0" prefWidth="254.0" />
+            <TextField fx:id="phsupp" disable="true" layoutX="363.0" layoutY="284.0" prefHeight="25.0" prefWidth="254.0" />
+            <Label layoutX="77.0" layoutY="18.0" text="matricule" />
+            <Label layoutX="77.0" layoutY="47.0" text="nom" />
+            <Label layoutX="77.0" layoutY="76.0" text="email" />
+            <Label layoutX="77.0" layoutY="110.0" text="recrt" />
+            <Label layoutX="77.0" layoutY="288.0" text="Phsupp" />
+            <Label layoutX="77.0" layoutY="244.0" text="hsupp" />
+            <Label layoutX="77.0" layoutY="147.0" text="salaire" />
+            <Label layoutX="77.0" layoutY="199.0" text="categorie" />
+            <Button fx:id="home" layoutX="570.0" layoutY="322.0" mnemonicParsing="false" onAction="#onhome" text="home" />
+            <ComboBox fx:id="detail" layoutX="154.0" layoutY="316.0" onAction="#ongetdetai" prefWidth="150.0" />
+            <Label layoutX="63.0" layoutY="326.0" text="view detail" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

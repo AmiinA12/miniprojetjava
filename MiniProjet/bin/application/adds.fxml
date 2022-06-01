@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="571.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AddController">
+  <children>
+    <MenuBar prefHeight="24.0" prefWidth="640.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="ajouté" layoutX="542.0" layoutY="488.0" mnemonicParsing="false" onAction="#onajout" text="ajouter" />
+            <Button fx:id="annulé" layoutX="479.0" layoutY="488.0" mnemonicParsing="false" onAction="#onannulle" text="annuler" />
+            <Label layoutX="96.0" layoutY="31.0" text="nom" />
+            <Label layoutX="94.0" layoutY="88.0" text="email" />
+            <Label layoutX="76.0" layoutY="132.0" text="recrutement" />
+            <Label layoutX="84.0" layoutY="190.0" text="catégorie" />
+            <TextField fx:id="nom" layoutX="261.0" layoutY="27.0" />
+            <TextField fx:id="email" layoutX="261.0" layoutY="76.0" />
+            <TextField fx:id="rec" layoutX="261.0" layoutY="120.0" />
+            <ComboBox fx:id="cat" layoutX="261.0" layoutY="177.0" onAction="#onchosse" prefWidth="150.0" />
+            <Label fx:id="hsupplabel" layoutX="91.0" layoutY="277.0" text="Hsupp" visible="false" />
+            <Label fx:id="phsupplabel" layoutX="89.0" layoutY="324.0" text="Phsupp" visible="false" />
+            <TextField fx:id="hsupp" layoutX="262.0" layoutY="273.0" visible="false" />
+            <TextField fx:id="phsupp" layoutX="262.0" layoutY="320.0" visible="false" />
+            <Label fx:id="ventlabel" layoutX="95.0" layoutY="381.0" text="vente" visible="false" />
+            <Label fx:id="percentlabel" layoutX="95.0" layoutY="416.0" text="pourcentage" visible="false" />
+            <TextField fx:id="vente" layoutX="262.0" layoutY="369.0" visible="false" />
+            <TextField fx:id="percent" layoutX="262.0" layoutY="412.0" visible="false" />
+            <Label layoutX="95.0" layoutY="232.0" text="matricule" />
+            <TextField fx:id="matricule" layoutX="262.0" layoutY="228.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
